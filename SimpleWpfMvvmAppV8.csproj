@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<AssemblyTitle>Simple WPF MVVM App</AssemblyTitle>
+		<AssemblyDescription>WPF MVVM Application migrated to .NET 8.0</AssemblyDescription>
+		<AssemblyConfiguration>Debug</AssemblyConfiguration>
+		<AssemblyCompany>SimpleWpfMvvmAppV8</AssemblyCompany>
+		<AssemblyProduct>SimpleWpfMvvmAppV8</AssemblyProduct>
+		<AssemblyCopyright>Copyright © 2025</AssemblyCopyright>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="migrate-mvc\**" />
+	  <EmbeddedResource Remove="migrate-mvc\**" />
+	  <None Remove="migrate-mvc\**" />
+	  <Page Remove="migrate-mvc\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ProductImages\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include=".github\chatmodes\Universal .NET Migration Assistant.chatmode.md" />
+	</ItemGroup>
+
+</Project>

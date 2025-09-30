@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="SimpleWpfMvvmAppV8.Views.HomePage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <TextBlock Text="{Binding WelcomeMessage}"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontSize="24"/>
+    </Grid>
+</UserControl>
